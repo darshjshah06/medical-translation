@@ -1,0 +1,527 @@
+[
+    {
+        "heard": "mee poorthi peru okasari cheppandi",
+        "correct": "please tell your full name",
+        "category": "question",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "mee date of birth cheppandi",
+        "correct": "please tell your date of birth",
+        "category": "question",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "mee nominee peru cheppandi",
+        "correct": "please tell nominee name",
+        "category": "question",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "mee education qualification cheppandi",
+        "correct": "please tell your education qualification",
+        "category": "question",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "mee height weight cheppandi",
+        "correct": "please tell your height and weight",
+        "category": "question",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "kadilinchoddandi",
+        "correct": "do not move",
+        "category": "instruction",
+        "severity": "medium",
+        "action": "ignore"
+    },
+    {
+        "heard": "alaane pattukondi",
+        "correct": "hold it like that",
+        "category": "instruction",
+        "severity": "medium",
+        "action": "ignore"
+    },
+    {
+        "heard": "okka second",
+        "correct": "one second",
+        "category": "instruction",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "inkonchem venakki vellandi",
+        "correct": "please go a little further back",
+        "category": "instruction",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "back camera on cheyyandi",
+        "correct": "turn on the back camera",
+        "category": "instruction",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "switch camera",
+        "correct": null,
+        "category": "ui_instruction",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "three dots",
+        "correct": null,
+        "category": "ui_instruction",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "front camera on cheyyandi",
+        "correct": null,
+        "category": "ui_instruction",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "avunu",
+        "correct": "yes",
+        "category": "yes_no",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "avunandi",
+        "correct": "yes",
+        "category": "yes_no",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "ledu",
+        "correct": "no",
+        "category": "yes_no",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "ledandi",
+        "correct": "no",
+        "category": "yes_no",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "emi ledu",
+        "correct": "nothing",
+        "category": "medical_response",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "em levu",
+        "correct": "nothing",
+        "category": "medical_response",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "problem ledu",
+        "correct": "no problem",
+        "category": "medical_response",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "aem ledu",
+        "correct": "nothing",
+        "category": "medical_response",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "degree discontinued",
+        "correct": "degree discontinued",
+        "category": "education",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "post graduation msc",
+        "correct": "post graduation msc",
+        "category": "education",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "bsc madam",
+        "correct": "b.sc.",
+        "category": "education",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "b.tech madam",
+        "correct": "b.tech",
+        "category": "education",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "height approximately",
+        "correct": "height approximately",
+        "category": "measurement",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "weight approximately",
+        "correct": "weight approximately",
+        "category": "measurement",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "70 or 72 kgs",
+        "correct": "70-72 kg",
+        "category": "measurement",
+        "severity": "medium",
+        "action": "flag"
+    },
+    {
+        "heard": "79 79 79",
+        "correct": "79 kg",
+        "category": "measurement",
+        "severity": "medium",
+        "action": "flag"
+    },
+    {
+        "heard": "5.9 inches",
+        "correct": null,
+        "category": "measurement_error",
+        "severity": "high",
+        "action": "flag"
+    },
+    {
+        "heard": "5.459 kgs rate",
+        "correct": null,
+        "category": "measurement_error",
+        "severity": "high",
+        "action": "flag"
+    },
+    {
+        "heard": "562000",
+        "correct": null,
+        "category": "pincode_error",
+        "severity": "high",
+        "action": "flag"
+    },
+    {
+        "heard": "chest pain",
+        "correct": "chest pain",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "heart attack",
+        "correct": "heart attack",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "palpitations",
+        "correct": "palpitations",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "breathlessness",
+        "correct": "breathlessness",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "hyper tension",
+        "correct": "hypertension",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "bp",
+        "correct": "blood pressure",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "sugar",
+        "correct": "diabetes",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "cholesterol",
+        "correct": "cholesterol",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "thyroid",
+        "correct": "thyroid disorder",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "asthma",
+        "correct": "asthma",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "bronchitis",
+        "correct": "bronchitis",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "tb",
+        "correct": "tuberculosis",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "breathing difficulties",
+        "correct": "breathing difficulties",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "respiratory problems",
+        "correct": "respiratory problems",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "leukemia",
+        "correct": "leukemia",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "circulatory problem",
+        "correct": "circulatory problems",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "hepatitis",
+        "correct": "hepatitis",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "jaundice",
+        "correct": "jaundice",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "indigestion",
+        "correct": "indigestion",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "cancer tumors",
+        "correct": "cancer or tumors",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "cyst growth",
+        "correct": "cyst growth",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "kidney stones",
+        "correct": "kidney stones",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "kidney failure",
+        "correct": "kidney failure",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "gynecological issues",
+        "correct": "gynecological issues",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "epilepsy",
+        "correct": "epilepsy",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "nervous disorders",
+        "correct": "nervous disorders",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "paralysis",
+        "correct": "paralysis",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "brain stroke",
+        "correct": "brain stroke",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "ent",
+        "correct": "ear nose throat",
+        "category": "medical_term",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "back neck muscle bone joint arthritis",
+        "correct": "back, neck, muscle, bone, joint, arthritis problems",
+        "category": "medical_term",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "normal delivery",
+        "correct": "normal delivery",
+        "category": "medical_history",
+        "severity": "low",
+        "action": "normalize"
+    },
+    {
+        "heard": "marriage leave",
+        "correct": "marriage leave",
+        "category": "leave_context",
+        "severity": "medium",
+        "action": "flag"
+    },
+    {
+        "heard": "health insurance not life insurance",
+        "correct": "health insurance, not life insurance",
+        "category": "insurance_context",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "first time term insurance",
+        "correct": "first term insurance policy",
+        "category": "insurance_context",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "company provided health insurance",
+        "correct": "employer-provided health insurance",
+        "category": "insurance_context",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "care health insurance",
+        "correct": "Care Health Insurance",
+        "category": "entity",
+        "severity": "medium",
+        "action": "normalize"
+    },
+    {
+        "heard": "axis max life",
+        "correct": "Axis Max Life Insurance",
+        "category": "entity",
+        "severity": "high",
+        "action": "normalize"
+    },
+    {
+        "heard": "access max life",
+        "correct": "Axis Max Life Insurance",
+        "category": "entity",
+        "severity": "high",
+        "action": "normalize"
+    },
+    {
+        "heard": "same level",
+        "correct": null,
+        "category": "ambiguous_response",
+        "severity": "high",
+        "action": "flag"
+    },
+    {
+        "heard": "m level",
+        "correct": null,
+        "category": "ambiguous_response",
+        "severity": "high",
+        "action": "flag"
+    },
+    {
+        "heard": "aah",
+        "correct": null,
+        "category": "ambiguous_response",
+        "severity": "medium",
+        "action": "flag"
+    },
+    {
+        "heard": "okay",
+        "correct": null,
+        "category": "filler",
+        "severity": "low",
+        "action": "ignore"
+    },
+    {
+        "heard": "ya ya",
+        "correct": null,
+        "category": "filler",
+        "severity": "low",
+        "action": "ignore"
+    }
+]

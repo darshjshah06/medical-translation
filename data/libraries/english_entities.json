@@ -1,0 +1,37 @@
+[
+  {
+    "heard": "access max life insurance",
+    "correct": "Max Life Insurance",
+    "category": "company_name",
+    "severity": "critical",
+    "action": "always_normalize"
+  },
+  {
+    "heard": "axis bank life insurance company",
+    "correct": "Axis Max Life Insurance",
+    "category": "company_name",
+    "severity": "critical",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "iit jyoti",
+    "correct": "IIT Jodhpur",
+    "category": "institution",
+    "severity": "medium",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "click to protect",
+    "correct": "Click 2 Protect",
+    "category": "insurance_product",
+    "severity": "medium",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "lic normal payback",
+    "correct": "LIC money back policy",
+    "category": "insurance_type",
+    "severity": "medium",
+    "action": "flag_for_review"
+  }
+]

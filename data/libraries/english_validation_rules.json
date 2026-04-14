@@ -1,0 +1,36 @@
+{
+  "pan": {
+    "pattern": "^[A-Z]{5}[0-9]{4}[A-Z]$",
+    "action_if_invalid": "flag"
+  },
+  "pincode": {
+    "pattern": "^[0-9]{6}$",
+    "action_if_invalid": "flag"
+  },
+  "height": {
+    "accepted_formats": [
+      "### cm",
+      "#.# ft",
+      "#'#\""
+    ],
+    "action_if_ambiguous": "flag"
+  },
+  "weight": {
+    "accepted_formats": [
+      "## kg",
+      "### kg"
+    ],
+    "action_if_multiple_values": "flag"
+  },
+  "date": {
+    "accepted_formats": [
+      "DD/MM/YYYY",
+      "D Month YYYY",
+      "DD Month YYYY"
+    ],
+    "action_if_incomplete": "flag"
+  },
+  "name": {
+    "action_if_uncertain": "do_not_autocorrect"
+  }
+}

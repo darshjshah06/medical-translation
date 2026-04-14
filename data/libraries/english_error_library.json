@@ -1,0 +1,72 @@
+[
+  {
+    "heard": "dot zone",
+    "correct": "dots only",
+    "category": "ui_instruction",
+    "severity": "medium",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "the two one thing",
+    "correct": "do one thing",
+    "category": "instruction_phrase",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "venom attack",
+    "correct": "heart attack",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "annexure",
+    "correct": "x-ray",
+    "category": "medical_test",
+    "severity": "medium",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "sleep for illness",
+    "correct": "leave for illness",
+    "category": "question_phrase",
+    "severity": "medium",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "bus to sarpanch",
+    "correct": null,
+    "category": "ambiguous_phrase",
+    "severity": "critical",
+    "action": "do_not_autocorrect"
+  },
+  {
+    "heard": "fear nostril disorders",
+    "correct": "ENT disorders",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "blood disorders in urine",
+    "correct": "blood in urine",
+    "category": "medical_phrase",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "10 days sleep for illness",
+    "correct": "10 days leave for illness",
+    "category": "question_phrase",
+    "severity": "medium",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "throat pain",
+    "correct": "chest pain",
+    "category": "medical_phrase",
+    "severity": "high",
+    "action": "flag_for_review"
+  }
+]

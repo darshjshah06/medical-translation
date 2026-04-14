@@ -1,0 +1,58 @@
+[
+  {
+    "heard": "parotitions",
+    "correct": "palpitations",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "circular disorders",
+    "correct": "circulatory disorders",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "chocolate disorders",
+    "correct": "clotting disorders",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "sepetitis",
+    "correct": "hepatitis",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "luchemia",
+    "correct": "leukemia",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "autocorrect_if_confident"
+  },
+  {
+    "heard": "stroke disorders",
+    "correct": "clotting disorders",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "kidney ureteric stenosis",
+    "correct": "kidney ureteric stones",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "flag_for_review"
+  },
+  {
+    "heard": "apoptosis",
+    "correct": "hepatitis",
+    "category": "medical_term",
+    "severity": "high",
+    "action": "flag_for_review"
+  }
+]

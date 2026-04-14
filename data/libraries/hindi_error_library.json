@@ -1,0 +1,30 @@
+[
+  {"heard":"कोई नहीं","correct":"no","category":"yes_no","action":"normalize"},
+  {"heard":"हां","correct":"yes","category":"yes_no","action":"normalize"},
+  {"heard":"नहीं","correct":"no","category":"yes_no","action":"normalize"},
+  {"heard":"ठीक है","category":"ambiguous","action":"flag"},
+  {"heard":"जी करा हां","category":"ambiguous","action":"flag"},
+
+  {"heard":"ब्लड और पास इन यूरिन","correct":"blood or pus in urine","category":"medical","action":"flag"},
+  {"heard":"लुकेमिया","correct":"leukemia","category":"medical","action":"autocorrect"},
+  {"heard":"हेपेटाइटिस","correct":"hepatitis","category":"medical","action":"autocorrect"},
+  {"heard":"जॉन्डिस","correct":"jaundice","category":"medical","action":"autocorrect"},
+  {"heard":"सर्कुलेटरी","correct":"circulatory","category":"medical","action":"autocorrect"},
+  {"heard":"एपिलिप्सी","correct":"epilepsy","category":"medical","action":"autocorrect"},
+  {"heard":"पैरालिसिस","correct":"paralysis","category":"medical","action":"autocorrect"},
+
+  {"heard":"डबल वन","correct":"11","category":"numeric","action":"normalize"},
+  {"heard":"के आसपास","correct":"approximately","category":"numeric","action":"normalize"},
+
+  {"heard":"सरकारी आदमी","correct":"government employee","category":"context","action":"normalize"},
+  {"heard":"कभी कभी","correct":"occasionally","category":"lifestyle","action":"normalize"},
+  {"heard":"हफ्ते में एक बार","correct":"once a week","category":"lifestyle","action":"normalize"},
+
+  {"heard":"कैमरा ऑन कीजिए","category":"noise","action":"ignore"},
+  {"heard":"हिलाइए मत","category":"noise","action":"ignore"},
+
+  {"heard":"9","correct":"no","category":"numeric_confusion","action":"flag"},
+  {"heard":"9 sir","correct":"no","category":"numeric_confusion","action":"flag"},
+  {"heard":"9 madam","correct":"no","category":"numeric_confusion","action":"flag"}
+
+]
