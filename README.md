@@ -5,7 +5,7 @@ Multilingual correction + validation system for improving AI transcription accur
 
 ## Features
 - Dictionary-based correction
-- Numeric confusion handling (e.g., 9 → no)
+- Numeric confusion handling
 - Medical term normalization
 - Obsidian integration (RAG)
 - Gradio integration ready
