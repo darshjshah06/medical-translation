@@ -5,7 +5,7 @@ import re
 # LOAD JSON FILE
 # -------------------------
 def load_json(path):
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 # -------------------------
@@ -14,6 +14,7 @@ def load_json(path):
 hindi_lib = load_json("../data/libraries/hindi_error_library.json")
 telugu_lib = load_json("../data/libraries/telugu_error_library.json")
 english_lib = load_json("../data/libraries/english_error_library.json")
+insurance_entities = load_json("../data/libraries/insurance_entities.json")
 
 # -------------------------
 # BASIC CLEAN
@@ -29,7 +30,6 @@ def fix_numeric_confusion(text):
 
     stripped = text.strip().lower()
 
-    # Only fix if the whole response is likely a yes/no answer
     if stripped == "9":
         return "no", ["Numeric confusion: '9' interpreted as 'no'"]
 
@@ -42,7 +42,7 @@ def fix_numeric_confusion(text):
     return text, flags
 
 # -------------------------
-# APPLY LIBRARY (CORE)
+# APPLY LIBRARY
 # -------------------------
 def apply_library(text, lib):
     flags = []
@@ -67,18 +67,31 @@ def apply_library(text, lib):
     return text, flags
 
 # -------------------------
+# APPLY INSURANCE ENTITIES
+# -------------------------
+def apply_entities(text):
+    for entry in insurance_entities:
+        heard = entry["heard"]
+        correct = entry["correct"]
+
+        if heard in text:
+            text = text.replace(heard, correct)
+
+    return text
+
+# -------------------------
 # MAIN PROCESS FUNCTION
 # -------------------------
 def process(text):
     text = normalize_text(text)
 
-    # First fix known ASR number confusion
     text, f0 = fix_numeric_confusion(text)
 
-    # Apply all languages
     text, f1 = apply_library(text, hindi_lib)
     text, f2 = apply_library(text, telugu_lib)
     text, f3 = apply_library(text, english_lib)
+
+    text = apply_entities(text)
 
     flags = f0 + f1 + f2 + f3
 

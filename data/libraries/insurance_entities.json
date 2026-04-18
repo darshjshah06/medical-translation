@@ -1,0 +1,29 @@
+[
+  {"heard": "hdfc life", "correct": "HDFC Life Insurance", "category": "company"},
+  {"heard": "icici prudential", "correct": "ICICI Prudential Life Insurance", "category": "company"},
+  {"heard": "sbi life", "correct": "SBI Life Insurance", "category": "company"},
+  {"heard": "axis max", "correct": "Axis Max Life Insurance", "category": "company"},
+  {"heard": "max life", "correct": "Axis Max Life Insurance", "category": "company"},
+  {"heard": "access max", "correct": "Axis Max Life Insurance", "category": "company"},
+  {"heard": "kotak life", "correct": "Kotak Mahindra Life Insurance", "category": "company"},
+  {"heard": "birla sun life", "correct": "Aditya Birla Sun Life Insurance", "category": "company"},
+  {"heard": "tata aia", "correct": "Tata AIA Life Insurance", "category": "company"},
+  {"heard": "bajaj allianz", "correct": "Bajaj Allianz Life Insurance", "category": "company"},
+  {"heard": "pnb metlife", "correct": "PNB MetLife India Insurance", "category": "company"},
+
+  {"heard": "reliance nippon", "correct": "Reliance Nippon Life Insurance", "category": "company"},
+  {"heard": "aviva life", "correct": "Aviva Life Insurance India", "category": "company"},
+  {"heard": "ageas federal", "correct": "Ageas Federal Life Insurance", "category": "company"},
+  {"heard": "canara hsbc", "correct": "Canara HSBC Life Insurance", "category": "company"},
+  {"heard": "pramerica life", "correct": "Pramerica Life Insurance", "category": "company"},
+  {"heard": "star union dai", "correct": "Star Union Dai-ichi Life Insurance", "category": "company"},
+  {"heard": "indiafirst", "correct": "IndiaFirst Life Insurance", "category": "company"},
+  {"heard": "edelweiss life", "correct": "Edelweiss Life Insurance", "category": "company"},
+  {"heard": "shriram life", "correct": "Shriram Life Insurance", "category": "company"},
+  {"heard": "sahara india life", "correct": "Sahara India Life Insurance", "category": "company"},
+
+  {"heard": "bandhan life", "correct": "Bandhan Life Insurance", "category": "company"},
+  {"heard": "acko life", "correct": "Acko Life Insurance", "category": "company"},
+  {"heard": "creditaccess life", "correct": "CreditAccess Life Insurance", "category": "company"},
+  {"heard": "digit life", "correct": "Go Digit Life Insurance", "category": "company"}
+]
