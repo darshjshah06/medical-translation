@@ -1,0 +1,26 @@
+[
+  {
+    "heard": "you have bp sugar cholesterol thyroid problems",
+    "correct": "do you have any bp, sugar, cholesterol, or thyroid problems?",
+    "category": "question_normalization",
+    "action": "normalize"
+  },
+  {
+    "heard": "you have blood disorders anemia leukemia and problems with circulation",
+    "correct": "do you have any blood disorders such as anemia, leukemia, or circulatory problems?",
+    "category": "question_normalization",
+    "action": "normalize"
+  },
+  {
+    "heard": "you have liver problems hepatitis jaundice indigestion problems",
+    "correct": "do you have any liver problems such as hepatitis, jaundice, or indigestion problems?",
+    "category": "question_normalization",
+    "action": "normalize"
+  },
+  {
+    "heard": "you will be traveling outside india",
+    "correct": "do you intend to travel outside india within the next 3 months?",
+    "category": "question_normalization",
+    "action": "normalize"
+  }
+]
