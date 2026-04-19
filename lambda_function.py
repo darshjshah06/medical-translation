@@ -47,17 +47,13 @@ def lambda_handler(event, context):
     {
       "transcript_id": "case_001",
       "title": "case_001",
-      "transcript_text": "raw transcript here",
-      "write_markdown": true,
-      "write_json": true
+      "transcript_text": "raw transcript here"
     }
     """
 
     transcript_id = event.get("transcript_id") or datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     title = event.get("title") or transcript_id
     raw_text = event.get("transcript_text", "")
-    write_markdown = bool(event.get("write_markdown", True))
-    write_json = bool(event.get("write_json", True))
 
     if not raw_text:
         return {
@@ -73,35 +69,24 @@ def lambda_handler(event, context):
     result = {
         "transcript_id": transcript_id,
         "title": title,
-        "raw_text": raw_text,
         "cleaned_text": cleaned_text,
         "flags": flags,
         "timestamp_utc": timestamp,
         "markdown_s3_key": None,
-        "json_s3_key": None,
     }
 
     if OUTPUT_BUCKET:
-        if write_markdown:
-            markdown_key = f"{OUTPUT_PREFIX}/{safe_title}_{timestamp}.md"
-            markdown_body = build_markdown_note(title, raw_text, cleaned_text, flags)
-            put_text_to_s3(
-                bucket=OUTPUT_BUCKET,
-                key=markdown_key,
-                body=markdown_body,
-                content_type="text/markdown; charset=utf-8",
-            )
-            result["markdown_s3_key"] = markdown_key
+        markdown_key = f"{OUTPUT_PREFIX}/{safe_title}_{timestamp}.md"
+        markdown_body = build_markdown_note(title, raw_text, cleaned_text, flags)
 
-        if write_json:
-            json_key = f"{OUTPUT_PREFIX}/{safe_title}_{timestamp}.json"
-            put_text_to_s3(
-                bucket=OUTPUT_BUCKET,
-                key=json_key,
-                body=json.dumps(result, ensure_ascii=False, indent=2),
-                content_type="application/json; charset=utf-8",
-            )
-            result["json_s3_key"] = json_key
+        put_text_to_s3(
+            bucket=OUTPUT_BUCKET,
+            key=markdown_key,
+            body=markdown_body,
+            content_type="text/markdown; charset=utf-8",
+        )
+
+        result["markdown_s3_key"] = markdown_key
 
     return {
         "statusCode": 200,
